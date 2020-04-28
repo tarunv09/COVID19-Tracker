@@ -1,0 +1,14 @@
+#npm modules
+node_modules/
+slackbot/node_modules/
+api/node_modules/
+scraper/node_modules/
+
+#mongodb credentials
+api/.env
+
+#slack app credentials
+slackbot/.env
+
+.vscode/
+

@@ -24,7 +24,7 @@ _A bot that tracks and display the global and random countrywise stats of COVID-
 4. Run `npm start`
 5. Open slack wokrspace and use command `help` to get started.
 
-## Output Screens
+## Output Screen
 ![Screenshot](/content/img/Screenshot.jpg)
 
 ## Author

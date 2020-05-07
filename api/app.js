@@ -5,7 +5,7 @@ const ObjectId = require("mongodb").ObjectID;
 const dotenv =  require("dotenv");
 const scraper = require("./scraper/getData");
 
-scraper();
+//scraper();
 
 dotenv.config();
 

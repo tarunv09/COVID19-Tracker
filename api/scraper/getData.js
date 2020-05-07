@@ -1,16 +1,14 @@
 const request = require("request-promise");
 const cheerio = require("cheerio");
 const url = "https://www.worldometers.info/coronavirus/";
-//const fs = require("fs");
-//const json2csv = require("json2csv").Parser;
 
 async function getData() {
   const result = await request.get(url);
   const $ = cheerio.load(result);
 
-  const array = [];         //initialise an empty array to store Data
+  const array = [];         //initialise an empty array to store data
   const tableColumns = [    
-    "Country,Other",
+    "Country",
     "Total Cases",
     "New Cases",
     "Total Deaths",
@@ -37,11 +35,6 @@ async function getData() {
     array.push(tableRow);
   });
     console.log(array);
-  //const j2cp = new json2csv();
-  //Convert JSON data in CSV.
-  //const csv = j2cp.parse(scrapedData);
-  //Write converted CSV data into data.csv file.
-  //fs.writeFileSync("./data.csv", csv);
 }
 
 module.exports = getData;
